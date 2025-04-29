@@ -1,12 +1,11 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>My Portfolio</h1>
-      </header>
-    </div>
+    <header className="App-header ">
+    <h1 className="text-center text-white">Welcome to the React App</h1>
+    </header>
   );
 }
 
