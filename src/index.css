@@ -1,0 +1,66 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: #e5e7eb;
+    padding-top: 70px; /* Add padding to body to prevent content from being hidden by the fixed navbar */
+}
+
+.glass-effect {
+    background: rgba(13, 110, 253, 0.1); /* Adjusted for Bootstrap primary color */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home {
+    min-height: calc(100vh - 70px); /* Adjust for the fixed navbar height */
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card.glass-effect {
+    background-color: rgba(33, 37, 41, 0.25); /* Darker glass effect for cards */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+    background-color: #212529;
+    border-color: #495057;
+    color: #e5e7eb;
+}
+
+.form-control:focus {
+    background-color: #212529;
+    border-color: #80bdff;
+    color: #e5e7eb;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
