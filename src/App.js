@@ -190,7 +190,13 @@ function App() {
                                     <div className="card-body">
                                         <h5 className="card-title fs-5 fw-bold">PL-400: Microsoft Power Platform Developer</h5>
                                         <p className="card-text text-white-50 mb-1">Credential ID: 1940EE0F7D551EDE</p>
-                                        <p className="card-text text-white-50">Certification number: 5EXC47-76A657</p>
+                                        <p className="card-text text-white-50 mb-3">Certification number: 5EXC47-76A657</p>
+                                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MohdSiddiqui-9671/1940EE0F7D551EDE?sharingId=7E55377E87AB2D21" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer" 
+                                           className="btn btn-sm btn-info">
+                                            Verify Certificate
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -202,19 +208,31 @@ function App() {
                                     <div className="card-body">
                                         <h5 className="card-title fs-5 fw-bold">PL-300: Microsoft Power BI Data Analyst</h5>
                                         <p className="card-text text-white-50 mb-1">Credential ID: C49F0645FBB59FD6</p>
-                                        <p className="card-text text-white-50">Certification number: EAI6D0-A74020</p>
+                                        <p className="card-text text-white-50 mb-3">Certification number: EAI6D0-A74020</p>
+                                        <a href="https://learn.microsoft.com/api/credentials/share/en-us/MohdSiddiqui-9671/C49F0645FBB59FD6?sharingId=7E55377E87AB2D21" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer" 
+                                           className="btn btn-sm btn-info">
+                                            Verify Certificate
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4">
                                 <div className="card h-100 text-white glass-effect text-center p-3 mb-3 cert-card-hover">
                                     <div className="cert-img-wrapper">
-                                        <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="AZ-900: Microsoft Azure Fundamentals" className="cert-img" />
+                                        <img src={process.env.PUBLIC_URL + '/AZ_900_Azure.png'} alt="AZ-900: Microsoft Azure Fundamentals" className="cert-img" />
                                     </div>
                                     <div className="card-body">
                                         <h5 className="card-title fs-5 fw-bold">AZ-900: Microsoft Azure Fundamentals</h5>
-                                        <p className="card-text text-white-50 mb-1">Credential ID: (To be updated)</p>
-                                        <p className="card-text text-white-50">Certification number: (To be updated)</p>
+                                        <p className="card-text text-white-50 mb-1">Credential ID: B1F370D931E32178</p>
+                                        <p className="card-text text-white-50 mb-3">Certification number: 1EA1EB-FB7441</p>
+                                        <a href="https://learn.microsoft.com/en-us/users/mohdsiddiqui-9671/credentials/certification/azure-fundamentals?tab=credentials-tab" 
+                                           target="_blank" 
+                                           rel="noopener noreferrer" 
+                                           className="btn btn-sm btn-info">
+                                            Verify Certificate
+                                        </a>
                                     </div>
                                 </div>
                             </div>
