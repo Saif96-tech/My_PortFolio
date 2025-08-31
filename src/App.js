@@ -245,9 +245,6 @@ function App() {
             <footer className="bg-dark py-4">
                 <div className="container text-center text-white-50">
                     <div className="mb-3 d-flex justify-content-center align-items-center gap-3">
-                        <a href="https://github.com/Saif96-tech" target="_blank" rel="noopener noreferrer" className="text-white-50 text-decoration-none mx-2" title="GitHub">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style={{height: '28px', width: '28px', verticalAlign: 'middle', marginRight: '6px'}} />
-                        </a>
                         <a href="https://www.linkedin.com/in/mohd-saif-siddiqui-b2b25a152" target="_blank" rel="noopener noreferrer" className="text-white-50 text-decoration-none mx-2" title="LinkedIn">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style={{height: '28px', width: '28px', verticalAlign: 'middle', marginRight: '6px'}} />
                         </a>
