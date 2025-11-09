@@ -1,0 +1,274 @@
+/* ===== PROJECTS PAGE SPECIFIC STYLES ===== */
+/* Styles specific to the projects page */
+
+/* ===== PAGE HEADER ===== */
+/* Header section for projects page */
+.page-header {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    padding: 120px 0 80px; /* Extra top padding for fixed navbar */
+    text-align: center;
+}
+
+/* Main page title */
+.page-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Page subtitle */
+.page-subtitle {
+    font-size: 1.2rem;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+}
+
+/* Decorative divider under page title */
+.page-divider {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* ===== PROJECTS SECTION ===== */
+/* Main projects content area */
+.projects-section {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    min-height: 80vh;
+}
+
+/* Project category container */
+.project-category {
+    margin-bottom: 4rem;
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Decorative divider under category titles */
+.category-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    margin-bottom: 2rem;
+    border-radius: 2px;
+}
+
+/* ===== PROJECT CARDS ===== */
+/* Individual project card styling */
+.project-card {
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+    backdrop-filter: blur(15px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%; /* Equal height cards */
+}
+
+/* Project card hover effect */
+.project-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-color: rgba(96, 165, 250, 0.4);
+}
+
+/* Project image wrapper */
+.project-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+
+/* Project image styling */
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Image zoom effect on card hover */
+.project-card:hover .project-img-wrapper img {
+    transform: scale(1.1);
+}
+
+/* Image overlay for hover effect */
+.project-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(56, 189, 248, 0.8), rgba(129, 140, 248, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show overlay on card hover */
+.project-card:hover .project-img-overlay {
+    opacity: 1;
+}
+
+/* Overlay text styling */
+.project-overlay-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Project content area */
+.project-content {
+    padding: 2rem;
+}
+
+/* Project title */
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Project description */
+.project-description {
+    color: #d1d5db;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Technology badges container */
+.project-tech {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* Individual technology badge */
+.tech-badge {
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+/* ===== WORKFLOW CARD ===== */
+/* Power Automate workflows card */
+.workflow-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Workflow card hover effect */
+.workflow-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+/* Workflow section title */
+.workflow-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Workflow list container */
+.workflow-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual workflow item */
+.workflow-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Workflow item hover effect */
+.workflow-item:hover {
+    background: rgba(96, 165, 250, 0.05);
+    border-color: rgba(96, 165, 250, 0.2);
+    transform: translateX(10px);
+}
+
+/* Checkmark icon before each workflow item */
+.workflow-item::before {
+    content: "✓";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(45deg, #38bdf8, #818cf8);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+    
+    .category-title {
+        font-size: 1.6rem;
+    }
+    
+    .project-img-wrapper {
+        height: 200px;
+    }
+    
+    .project-content {
+        padding: 1.5rem;
+    }
+    
+    .workflow-card {
+        padding: 1.5rem;
+    }
+    
+    .workflow-item::before {
+        left: -10px;
+        width: 25px;
+        height: 25px;
+    }
+}

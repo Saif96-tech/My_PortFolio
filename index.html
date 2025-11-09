@@ -1,87 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohd Saif Siddiqui - Portfolio</title>
     <link rel="icon" href="./assets/images/icon.png">
     
-    <!-- Bootstrap CSS -->
+    <!-- External CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/pages/home.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top glass-effect">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3 gradient-text" href="#home">
+            <!-- Brand Logo -->
+            <a class="navbar-brand fw-bold fs-3 gradient-text" href="index.html">
                 <img src="./assets/images/logo.png" alt="Logo">
                 Portfolio
             </a>
+            <!-- Mobile Menu Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
-        <!-- Home Section -->
-        <section id="home">
+        <!-- Hero Section - Main landing area -->
+        <section id="hero" class="hero-section">
+            <!-- Dark overlay for better text readability -->
             <div class="hero-overlay"></div>
-            <div class="container position-relative z-1 p-4">
-                <h1 class="display-3 fw-bold mb-3">Hello, I'm <span class="gradient-text">Mohd Saif Siddiqui</span></h1>
-                <p class="lead fs-4 text-light mb-4">
-                    I'm a passionate <b>Power Platform IT Engineer</b> (Power Apps, Power Automate, Power BI, Power Virtual Agents) who builds smart business solutions and automations using Microsoft Power Platform and more.
-                </p>
-                <a href="#projects" class="btn btn-primary btn-lg">View My projects</a>
+            <div class="container position-relative">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <!-- Main hero content -->
+                        <div class="hero-content">
+                            <h1 class="hero-title">Hello, I'm <span class="gradient-text">Mohd Saif Siddiqui</span></h1>
+                            <p class="hero-subtitle">Power Platform IT Engineer</p>
+                            <p class="hero-description">
+                                Building smart business solutions and automations using Microsoft Power Platform, 
+                                Power Apps, Power Automate, Power BI, and Power Virtual Agents.
+                            </p>
+                            <!-- Call-to-action buttons -->
+                            <div class="hero-buttons">
+                                <a href="projects.html" class="btn btn-primary btn-lg me-3">View Projects</a>
+                                <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="py-5">
+        <!-- About Section - Personal information and skills -->
+        <section id="about" class="about-section py-5">
             <div class="container">
-                <h2 class="text-center display-5 fw-bold mb-5">About Me</h2>
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+                
                 <div class="row align-items-center g-5">
-                    <div class="col-md-4 text-center">
-                        <img src="./assets/images/mypic.jpg" alt="Mohd Saif Siddiqui" class="about-photo">
+                    <!-- Profile Image -->
+                    <div class="col-lg-4 text-center">
+                        <div class="about-image-wrapper">
+                            <img src="./assets/images/mypic.jpg" alt="Mohd Saif Siddiqui" class="about-photo">
+                            <div class="about-image-border"></div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <p class="fs-5 text-white-50 mb-3">
-                            I am a Power Platform Developer with a strong focus on building business apps, automating workflows, and delivering data-driven solutions. My expertise includes Power Apps (Canvas & Model-Driven), Power Automate, SharePoint Online, and Power BI integration. I am passionate about digital transformation and process improvement through technology.
-                        </p>
-                        <div class="skills-container" id="skills"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="py-5 bg-dark">
-            <div class="container">
-                <h2 class="display-5 fw-bold mb-4 text-info">Projects</h2>
-                
-                <div class="mb-4">
-                    <h3 class="text-info mb-3">Microsoft PowerApps Projects</h3>
-                    <div class="row g-4" id="powerAppsProjects"></div>
-                </div>
-                
-                <div class="mb-4">
-                    <h3 class="text-info mb-3">MS PowerAutomate Workflows</h3>
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="card h-100 text-white glass-effect mb-3">
-                                <div class="card-body">
-                                    <ul class="fs-6 text-white-50 mb-0" id="automateWorkflows"></ul>
+                    
+                    <!-- About Content -->
+                    <div class="col-lg-8">
+                        <div class="about-content">
+                            <h3 class="about-subtitle">Power Platform Developer</h3>
+                            <p class="about-description">
+                                I am a Power Platform Developer with a strong focus on building business apps, 
+                                automating workflows, and delivering data-driven solutions. My expertise includes 
+                                Power Apps (Canvas & Model-Driven), Power Automate, SharePoint Online, and Power BI integration.
+                            </p>
+                            
+                            <!-- Skills Section - Dynamically loaded -->
+                            <div class="skills-section mt-4">
+                                <h4 class="skills-title">Technical Skills</h4>
+                                <div class="skills-container" id="skills"></div>
+                            </div>
+                            
+                            <!-- Statistics -->
+                            <div class="about-stats mt-4">
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <div class="stat-item">
+                                            <h3 class="stat-number">10+</h3>
+                                            <p class="stat-label">Projects Completed</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-item">
+                                            <h3 class="stat-number">3</h3>
+                                            <p class="stat-label">Certifications</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="stat-item">
+                                            <h3 class="stat-number">4+</h3>
+                                            <p class="stat-label">Years Experience</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -90,34 +130,69 @@
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications" class="py-5 bg-secondary">
+        <!-- Quick Links Section - Navigation to other pages -->
+        <section class="quick-links-section py-5">
             <div class="container">
-                <h2 class="display-5 fw-bold mb-4 text-warning text-center">Certifications</h2>
-                <div class="row g-4 justify-content-center" id="certificationsContainer"></div>
+                <!-- Section Header -->
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="section-title text-white">Explore My Work</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                </div>
+                
+                <!-- Quick Link Cards -->
+                <div class="row g-4">
+                    <!-- Projects Link -->
+                    <div class="col-md-6">
+                        <div class="quick-link-card">
+                            <h3>Projects</h3>
+                            <p>Explore my Power Platform projects including Canvas Apps, Model-driven Apps, and Power BI dashboards.</p>
+                            <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications Link -->
+                    <div class="col-md-6">
+                        <div class="quick-link-card">
+                            <h3>Certifications</h3>
+                            <p>Check out my Microsoft certifications in Power Platform, Power BI, and Azure Fundamentals.</p>
+                            <a href="certifications.html" class="btn btn-primary">View Certifications</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark py-4">
-        <div class="container text-center text-white-50">
-            <div class="mb-3 d-flex justify-content-center align-items-center gap-3">
-                <a href="https://www.linkedin.com/in/mohd-saif-siddiqui-b2b25a152" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none mx-2" title="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon">
-                </a>
-                <a href="mailto:saifsiddiqui96@gmail.com" target="_blank" rel="noopener noreferrer" class="text-white-50 text-decoration-none mx-2" title="Gmail">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail" class="social-icon">
-                </a>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-content">
+                        <!-- Social Media Links -->
+                        <div class="social-links mb-3">
+                            <a href="https://www.linkedin.com/in/mohd-saif-siddiqui-b2b25a152" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+                            </a>
+                            <a href="mailto:saifsiddiqui96@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail">
+                            </a>
+                        </div>
+                        <!-- Copyright Text -->
+                        <p class="footer-text">&copy; 2025 Mohd Saif Siddiqui. All rights reserved.</p>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2025 Mohd Saif Siddiqui. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- External JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JS -->
-    <script src="./assets/js/script.js"></script>
+    <!-- Custom JavaScript Files -->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/pages/home.js"></script>
 </body>
 </html>

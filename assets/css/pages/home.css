@@ -1,0 +1,296 @@
+/* ===== HOME PAGE SPECIFIC STYLES ===== */
+/* Styles specific to the home/index page */
+
+/* ===== HERO SECTION ===== */
+/* Main landing area with background image */
+.hero-section {
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.9), rgba(31, 41, 55, 0.8)), 
+                url('../../images/bgimage.png'); /* Gradient overlay + background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark overlay for better text readability */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Hero content container */
+.hero-content {
+    position: relative;
+    z-index: 2; /* Above overlay */
+    animation: fadeInUp 1s ease-out; /* Entry animation */
+}
+
+/* Main hero title */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: #60a5fa; /* Blue accent color */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hero description text */
+.hero-description {
+    font-size: 1.2rem;
+    color: #d1d5db;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero buttons container */
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+/* ===== ABOUT SECTION ===== */
+/* Personal information and skills section */
+.about-section {
+    background: linear-gradient(135deg, #1f2937, #111827); /* Gradient background */
+    color: #fff;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* Decorative divider under section titles */
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+}
+
+/* About image wrapper for positioning */
+.about-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Profile photo styling */
+.about-photo {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 20px;
+    border: 4px solid #374151;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* Photo hover effect */
+.about-photo:hover {
+    transform: translateY(-10px);
+}
+
+/* Decorative border around photo */
+.about-image-border {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #38bdf8, #818cf8, #c084fc);
+    background-clip: padding-box;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* About content container */
+.about-content {
+    padding-left: 2rem;
+}
+
+/* About subtitle */
+.about-subtitle {
+    font-size: 1.8rem;
+    color: #60a5fa;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* About description paragraphs */
+.about-description {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills section title */
+.skills-title {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Skills container - flexbox layout */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Individual skill badge */
+.skill-badge {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
+    color: #60a5fa;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Skill badge hover effect */
+.skill-badge:hover {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== STATISTICS SECTION ===== */
+/* About stats container */
+.about-stats {
+    margin-top: 2rem;
+}
+
+/* Individual stat item */
+.stat-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Stat number styling */
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+/* Stat label styling */
+.stat-label {
+    font-size: 1rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===== QUICK LINKS SECTION ===== */
+/* Navigation cards to other pages */
+.quick-links-section {
+    background: linear-gradient(135deg, #374151, #1f2937);
+}
+
+/* Quick link card styling */
+.quick-link-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+/* Quick link card hover effect */
+.quick-link-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+/* Quick link card titles */
+.quick-link-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Quick link card descriptions */
+.quick-link-card p {
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ===== ANIMATIONS ===== */
+/* Fade in up animation for hero content */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .about-photo {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .about-content {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
